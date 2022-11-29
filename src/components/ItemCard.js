@@ -1,6 +1,8 @@
 import React from "react";
 
+
 export default function ItemCard(props) {
+
     return (
         <div className={`item-card--${props.type}`}>
             <h2>{props.name}</h2>
@@ -11,8 +13,6 @@ export default function ItemCard(props) {
                 <p>Base HP Stat: {props.hp}</p>
                 <button onClick={() => props.addFunc(props.name, props.hp)}>Add to Team</button>
             </div>
-            
-            
         </div>
     )
 }

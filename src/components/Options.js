@@ -6,8 +6,6 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
 export default function Options(props) {
-    //const [sortType, setSortType] = React.useState("Generation");
-
     const handleChangeSort = (event) => {
         if (event.target.value === props.sortType) {
             props.setSortType("id");
@@ -19,7 +17,6 @@ export default function Options(props) {
     };
 
     const handleChangeType = (event) => {
-        //props.setType(event.target.value);
         if (event.target.value === props.type) {
             props.setType("All");
         } else {

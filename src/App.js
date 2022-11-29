@@ -17,10 +17,12 @@ function App() {
 	const [team, setTeam] = React.useState([]);
 	const [totalHP, setTotalHP] = React.useState(0);
 
+
+	//=======AGGREGATOR MANAGEMENT=======//
 	const addToTeam = (name, hp) => {
-		if (!team.includes(name)) {
+		if (!team.includes(name)) { //only one of each kind
 			setTeam([...team, name]);
-			setTotalHP(totalHP + hp);
+			setTotalHP(totalHP + hp); //update aggregator
 		}		
 	}
 
@@ -30,6 +32,8 @@ function App() {
 		setTotalHP(totalHP - hpToDeduct);
 	}
 
+
+	//=======SORT AND FILTER=======//
 	const matchesFilterType = (item) => {
 		// all items should be shown when no filter is selected
 		if(type === "All") { 
@@ -52,18 +56,21 @@ function App() {
 		}
 	}
 
+	//takes in data and applies both sorting and filter
 	const display = (data) => {
 		data = data.filter(matchesFilterType);
 		data = data.filter(matchesFilterGen);
 		if (sortType === "Generation") {
-			//data.sort((a, b) => (a.generation > b.generation) ? 1 : -1)
-			data.sort((a, b) => (a.generation > b.generation) ? 1 : (a.generation === b.generation) ? ((a.id > b.id) ? 1 : -1) : -1 )
+			data.sort((a, b) => (a.generation > b.generation) ? 1 : (a.generation === b.generation) 
+				? ((a.id > b.id) ? 1 : -1) : -1 )
+			//if equal, default to id number
 		}
-		else if (sortType === "id") {
+		else if (sortType === "id") { //default sort
 			data.sort((a, b) => (a.id > b.id) ? 1 : -1)	
 		}
 		else if (sortType === "Type") {
-			data.sort((a, b) => (a.type1 > b.type1) ? 1 : (a.type1 === b.type1) ? ((a.id > b.id) ? 1 : -1) : -1 )
+			data.sort((a, b) => (a.type1 > b.type1) ? 1 : (a.type1 === b.type1) 
+			? ((a.id > b.id) ? 1 : -1) : -1 )
 
 		}
 		else if (sortType === "HP") {

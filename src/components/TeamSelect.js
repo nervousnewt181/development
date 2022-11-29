@@ -2,7 +2,6 @@ import React from "react";
 import ItemCard from "./ItemCard";
 
 
-
 export default function TeamSelect(props) {
     const itemCards = props.data.map(item => {
     	return (
@@ -22,7 +21,5 @@ export default function TeamSelect(props) {
             {itemCards}
         </div>
     )
-
-
       
 }
