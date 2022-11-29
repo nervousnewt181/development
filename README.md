@@ -1,7 +1,8 @@
 # Development
 
 ### Link to Deployed Website
-If you used the stencil code, this is `https://<your GitHub username>.github.io/<name of your repository>`
+https://nervousnewt181.github.io/development/
+
 
 ### Goal and Value of the Application
 This application lets users view all available starter Pokémon, sorting and filtering by relevant fields such as generation and primary type. The application also lets users build a team of these starters and see the total HP. 
