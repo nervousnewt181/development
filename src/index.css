@@ -19,12 +19,42 @@ code {
 
 .item-card {
   border-radius: 5px;
-  background-color: lightgray;
+  background-color: rgb(192, 187, 187);
   margin: 1rem;
   width: 10rem;
+  max-height: 13rem;
   text-align: center;
   padding: 1rem;
+}
 
+.item-card--Grass {
+  border-radius: 5px;
+  background-color: rgb(153, 190, 128);
+  margin: 1rem;
+  width: 10rem;
+  max-height: 13rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.item-card--Fire {
+  border-radius: 5px;
+  background-color: rgb(233, 122, 94);
+  margin: 1rem;
+  width: 10rem;
+  max-height: 13rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.item-card--Water {
+  border-radius: 5px;
+  background-color: rgb(163, 211, 218);
+  margin: 1rem;
+  width: 10rem;
+  max-height: 13rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .item-cards-container {
@@ -36,8 +66,36 @@ code {
   display: block;
 }
 
+.options-container {
+  background-color: rgb(211, 211, 211);
+  margin: 1rem 0 1rem 0;
+  padding: 0 1rem 0 1rem;
+  width: 165px;
+}
+
+.gen-select {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .team-container {
-  background-color: gray;
-  width: 35rem;
-  margin: 0;
+  background-color: lightpink;
+  margin: 1rem 0 1rem 0;
+  padding: 0 1rem 0 1rem;
+  width: 100%;
+  max-width: 165px;
+  min-width: 165px;
+
+  display: block;
+
+}
+
+.member {
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem 0 1rem 0;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: space-between;
 }

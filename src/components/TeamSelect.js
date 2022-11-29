@@ -12,6 +12,7 @@ export default function TeamSelect(props) {
                 type={item.type1}
                 generation={item.generation}
                 hp={item.hp}
+                addFunc={props.addFunc}
             />
    		)
   	});
