@@ -35,6 +35,7 @@ export default function Options(props) {
 
     return (
         <div className="options-container">
+            <p>**radio buttons can be unclicked.</p>
             <h2>Sort By</h2>
             <FormControl>
                 <FormLabel id="demo-controlled-radio-buttons-group"></FormLabel>

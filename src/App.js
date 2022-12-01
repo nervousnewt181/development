@@ -1,4 +1,3 @@
-import { cardActionAreaClasses } from "@mui/material";
 import React from "react";
 import Options from "./components/Options";
 import Team from "./components/Team";
@@ -99,9 +98,7 @@ function App() {
 				/>
 				<TeamSelect data={dataToDisplay} addFunc={addToTeam} />
 				<Team currTeam={team} totalHP={totalHP} removeFunc={removeFromTeam}/>
-			</div>
-			
-      		
+			</div>	
     	</div>
   	);
 }
