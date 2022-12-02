@@ -1,7 +1,7 @@
 # Development
 
 ### Link to Deployed Website
-https://nervousnewt181.github.io/development/
+https://github.com/nervousnewt181/development
 
 
 ### Goal and Value of the Application
